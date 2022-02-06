@@ -1,0 +1,44 @@
+file_name:
+avg_embedding_dev.csv	cls_embedding_dev.csv	gold_dev.csv
+avg_embedding_test.csv	cls_embedding_test.csv	gold_test.csv
+avg_embedding_train.csv	cls_embedding_train.csv	gold_train.csv
+
+# cls_embedding_train.csv:
+shape: (20000,768) 20000 docs and (1, 768) for each doc
+doc_vectors are the [cls] token embeddings
+
+# cls_embedding_dev.csv:
+shape: (5000,768) 5000 docs and (1, 768) for each doc
+doc_vectors are the [cls] token embeddings
+
+# cls_embedding_test.csv:
+shape: (25000,768) 25000 docs and (1, 768) for each doc
+doc_vectors are the [cls] token embeddings
+
+
+
+# avg_embedding_train.csv:
+shape: (20000,768) 20000 docs and (1, 768) for each doc
+doc_vectors are the mean of all token embeddings
+
+# avg_embedding_dev.csv:
+shape: (5000,768) 5000 docs and (1, 768) for each doc
+doc_vectors are the mean of all token embeddings
+
+# avg_embedding_test.csv:
+shape: (25000,768) 25000 docs and (1, 768) for each doc
+doc_vectors are the mean of all token embeddings
+
+
+
+# gold_train.csv:
+shape: (1, 20000) 20000 docs
+the true label of each training example
+
+# gold_dev.csv:
+shape: (1, 5000) 5000 docs
+the true label of each dev example
+
+# gold_test.csv:
+shape: (1, 25000) 25000 docs
+the true label of each test example
